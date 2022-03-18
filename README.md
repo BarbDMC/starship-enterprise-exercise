@@ -16,8 +16,8 @@ Every injector can work to 100% of its capacity indefinitely. However, It can wo
 Also, the maximun flow in which can work indefinitely downs in function of the injector's damage: per every point of damage, downs one mg/s. If It's damage at 70%, It's maximun flow indefinitely is 30 mg/s. If It's damage at 32%, the maximun flow is 68 mg/s. An injector can continue injecting 99 mg/s extras although to be damage, So a damage injector at 20% can inject 179 mg/s as maximun and work during a minute. If an injector is damage to 100%, it isn't usable.
 
 It must be developed a code that allows calculate the working flow of every injector for a light speed percent wanted, so that can maximize the performance time in a given damage situation. The solutions shouldn't contemplate drain the working time of every injector in secuential form.
-<br>
 
+<br>
 
 ## Install dependencies
 
