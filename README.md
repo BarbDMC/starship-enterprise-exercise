@@ -1,32 +1,33 @@
-# warp-drive-management-software-exercise
-Resolution of the exercise Enterprise ’warp-drive management software in Javascript
+# Starship Enterprise Exercise
+Resolution of the exercise Starship Enterprise about create a warp drive management software in Javascript.
 
+<br>
 
-### Exercise approach
+## Exercise approach
 
-La Starship Enterprise se dirige al espacio Klingon en una misión secreta. Durante una operación rutinaria, Scotty detecta que el ordenador que gestiona el motor Warp carece de un sistema de gestión de potencia para los tres inyectores de plasma que regulan la energía del reactor de antimateria, y por tanto la velocidad de la nave.
+The Starship Enterprise is going to a secret mision on Klingon. During a rutine operation, Scotty detects that the compute in charge to manage the warp engine doesn't have a power manegement system for the three plasma injectors that regulate the energy in the antimatter reactor and therefore the ship speed.
 
+Knowledge of the klingons fierceness, He decides to implement an app for offer the best balance between the three injector considering them can be damage in the battle.
 
-Conocedor de la fiereza de los Klingons, decide implementar una aplicación que le ofrezca el mejor balance entre los tres inyectores teniendo en cuenta que pueden resultar dañados en el combate.
+The plasma flow reactor has a linear relationship with velocity. For speed up to 100% of light speed, the antimatter reactor needs a plasma flow of 300 mg/s (milligrams per second). Every injector can inject a flow of 100 mg/s.
 
+Every injector can work to 100% of its capacity indefinitely. However, It can work injecting a flow of 99 mg/s about his capacity. Per every mg/s of flow above his capacity, lost a minute of performance, being the working time of the first extra mg/s 99 minutes, and the performance time with extra 99 mg/s, one minute.
 
-El flujo de plasma al reactor tiene una relación linear con la velocidad. Para acelerar al 100% de la velocidad de la luz, el reactor de antimateria necesita un flujo de plasma de 300 mg/s (miligramos por segundo). Cada inyector puede inyectar un flujo de 100 mg/s.
+Also, the maximun flow in which can work indefinitely downs in function of the injector's damage: per every point of damage, downs one mg/s. If It's damage at 70%, It's maximun flow indefinitely is 30 mg/s. If It's damage at 32%, the maximun flow is 68 mg/s. An injector can continue injecting 99 mg/s extras although to be damage, So a damage injector at 20% can inject 179 mg/s as maximun and work during a minute. If an injector is damage to 100%, it isn't usable.
 
+It must be developed a code that allows calculate the working flow of every injector for a light speed percent wanted, so that can maximize the performance time in a given damage situation. The solutions shouldn't contemplate drain the working time of every injector in secuential form.
+<br>
 
-Cada inyector puede funcionar al 100% de su capacidad indefinidamente. No obstante, puede funcionar inyectando un flujo de hasta 99 mg/s por encima de su capacidad. Por cada mg/s de flujo por encima de su capacidad, pierde un minuto de funcionamiento, siendo el tiempo de funcionamiento del primer mg/s extra 99 minutos, y el tiempo de funcionamiento con 99 mg/s extras, 1 minuto.
+## Install dependencies
 
+1. Use command: `npm init`
+1.  Later, run command: `npm install`
+<br>
 
-Además, el flujo máximo al que puede funcionar indefinidamente baja en función del daño del inyector: por cada punto de daño, baja un mg/s. Si está dañado al 70%, su flujo máximo indefinido es 30 mg/s. Si está dañado al 32%, el flujo máximo es de 68 mg/s. Un inyector puede seguir inyectando 99 mg/s extras a pesar de estar dañado, así un inyector dañado al 20% puede inyectar 179 mg/s como máximo y funcionar durante 1 minuto. Si un inyector está dañado al 100%, no es utilizable.
+## How to run tests
 
+1. Install Jest: `npm install jest`
+1. For run tests use command: `npm run test` 
 
-Se debe desarrollar un código que permita calcular el flujo de funcionamiento de cada inyector para un porcentaje de la velocidad de la luz deseado, de modo que maximice el tiempo de funcionamiento en una situación de daño dada. La soluciones no deben contemplar el agotar el tiempo de funcionamiento de cada inyector de forma secuencial.
-
-### Install dependencies
-
-- Use command: npm init
-- Later, use command: npm install
-
-### How to run tests
-
-- Use the command: npm run test 
+<br>
 
